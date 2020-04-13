@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+
+   <!-- 05.03.2019: MB Trac Sound-Update by PeterAH [FBM] -->
+
+<sounds>
+
+
+    <!-- motorStart template="DEFAULT_MOTOR_START" file="sounds/MBTrac1800_start.wav" linkNode="0>"/ -->
+    <motorStart file="sounds/MBTrac1800start.wav" linkNode="0>" innerRadius="23.5" outerRadius="110.0" >
+        <volume indoor="1.18" outdoor="1.40" />
+        <pitch indoor="0.95" outdoor="0.95" />
+        <lowpassGain indoor="0.4" outdoor="0.7" />
+    </motorStart>
+
+    <!-- motorStop template="DEFAULT_MOTOR_STOP" file="sounds/MBTrac1800_stop.wav" linkNode="0>"/ -->
+    <motorStop file="sounds/MBTrac1800stop.wav" linkNode="0>" innerRadius="23.5" outerRadius="110.0" >
+        <volume indoor="0.78" outdoor="1.0" />
+        <pitch indoor="0.9" outdoor="0.9" />
+        <lowpassGain indoor="0.5" outdoor="1.0" />
+    </motorStop>
+
+    <!-- motor template="DEFAULT_MOTOR_IDLE" file="sounds/MBTrac1800_idle_loop.wav" linkNode="0>"/ -->
+    <motor file="sounds/MBTrac1800idle.wav" linkNode="0>" innerRadius="23.5" outerRadius="110.0" >
+        <volume indoor="0.58" outdoor="0.80" >
+            <modifier type="MOTOR_RPM" value="0.00" modifiedValue="1.00" />
+            <modifier type="MOTOR_RPM" value="0.54" modifiedValue="0.00" />
+            <modifier type="ACCELERATE" value="0.0" modifiedValue="1.0" />
+            <modifier type="ACCELERATE" value="0.6" modifiedValue="1.5" />
+        </volume>
+        <pitch indoor="1.0" outdoor="1.0" >
+            <modifier type="MOTOR_RPM" value="0.00" modifiedValue="1.00" />
+            <modifier type="MOTOR_RPM" value="0.54" modifiedValue="1.50" />
+        </pitch>
+        <lowpassGain indoor="0.5" outdoor="1.0" />
+    </motor>
+    
+    <!-- Run-Sound -->
+    <motor file="$data/sounds/vehicles/engine/case_ih_optum/case_ih_optum_load_loop.wav" linkNode="0>" innerRadius="23.5" outerRadius="110.0" >
+        <pitch indoor="1.0" outdoor="1.0" >
+            <modifier type="MOTOR_RPM" value="0.25" modifiedValue="0.75" />
+            <modifier type="MOTOR_RPM" value="1.00" modifiedValue="1.00" />
+            <modifier type="SPEED" value="0" modifiedValue="0.75" />
+            <modifier type="SPEED" value="55" modifiedValue="1.04" />
+        </pitch>
+        <lowpassGain indoor="0.5" outdoor="1.0" />
+        <volume indoor="0.42" outdoor="0.58" >
+            <modifier type="MOTOR_RPM" value="0.00" modifiedValue="0.00" />
+            <modifier type="MOTOR_RPM" value="0.54" modifiedValue="1.00" />
+            <modifier type="SPEED" value="0.0" modifiedValue="1.0" />
+            <modifier type="SPEED" value="53.0" modifiedValue="1.0" />
+            <modifier type="MOTOR_LOAD" value="0.0" modifiedValue="1.00" />
+            <modifier type="MOTOR_LOAD" value="1.0" modifiedValue="0.00" />
+        </volume>
+    </motor>
+
+    
+    <!-- Load-Sound aus dem Stand beim Anfahren und bei Vollgas bergab mit ACCELERATE -->
+    <motor file="sounds/MBTrac1800load.wav" linkNode="0>" innerRadius="23.5" outerRadius="110.0" >
+        <pitch indoor="1.0" outdoor="1.0" >
+            <modifier type="MOTOR_RPM" value="0.0" modifiedValue="0.67" />
+            <!-- modifier type="MOTOR_RPM" value="0.25" modifiedValue="0.7" / -->
+            <modifier type="MOTOR_RPM" value="1.00" modifiedValue="1.06" />
+            <modifier type="SPEED" value="0" modifiedValue="0.75" />
+            <modifier type="SPEED" value="55" modifiedValue="1.04" />
+        </pitch>
+        <lowpassGain indoor="0.5" outdoor="0.65" />
+        <volume indoor="1.02" outdoor="1.45" >
+            <modifier type="SPEED" value="0.0"  modifiedValue="0.0" />
+            <modifier type="SPEED" value="2.0"  modifiedValue="1.0" />
+            <modifier type="SPEED" value="20.0" modifiedValue="1.0" />
+            <modifier type="SPEED" value="22.5" modifiedValue="0.0" />
+            <modifier type="SPEED" value="43.0" modifiedValue="0.0" />
+            <modifier type="SPEED" value="53.5" modifiedValue="1.2" />
+            <modifier type="ACCELERATE" value="0" modifiedValue="0.00" />
+            <modifier type="ACCELERATE" value="0.2" modifiedValue="0.18" />
+            <modifier type="MOTOR_LOAD" value="0.0" modifiedValue="1.00" />
+            <modifier type="MOTOR_LOAD" value="1.0" modifiedValue="0.00" />
+        </volume>
+    </motor>
+
+    <!-- Load-Sound aus dem Stand beim Anfahren und bei Vollgas bergab mit CRUISECONTROL -->
+    <motor file="sounds/MBTrac1800load.wav" linkNode="0>" innerRadius="23.5" outerRadius="110.0" >
+        <pitch indoor="1.0" outdoor="1.0" >
+            <modifier type="MOTOR_RPM" value="0.0" modifiedValue="0.67" />
+            <!-- modifier type="MOTOR_RPM" value="0.25" modifiedValue="0.7" / -->
+            <modifier type="MOTOR_RPM" value="1.00" modifiedValue="1.06" />
+            <modifier type="SPEED" value="0" modifiedValue="0.75" />
+            <modifier type="SPEED" value="55" modifiedValue="1.04" />
+        </pitch>
+        <lowpassGain indoor="0.5" outdoor="0.65" />
+        <volume indoor="1.02" outdoor="1.45" >
+            <modifier type="SPEED" value="0.0"  modifiedValue="0.0" />
+            <modifier type="SPEED" value="2.0"  modifiedValue="1.0" />
+            <modifier type="SPEED" value="20.0" modifiedValue="1.0" />
+            <modifier type="SPEED" value="22.5" modifiedValue="0.0" />
+            <modifier type="SPEED" value="43.0" modifiedValue="0.0" />
+            <modifier type="SPEED" value="53.5" modifiedValue="1.2" />
+            <modifier type="CRUISECONTROL" value="0" modifiedValue="0.00" />
+            <modifier type="CRUISECONTROL" value="1" modifiedValue="0.18" />
+            <modifier type="MOTOR_LOAD" value="0.0" modifiedValue="1.00" />
+            <modifier type="MOTOR_LOAD" value="1.0" modifiedValue="0.00" />
+        </volume>
+    </motor>
+
+    
+    <!-- Load-Sound 1. Gang -->    
+    <motor file="sounds/MBTrac1800load.wav" linkNode="0>" innerRadius="23.5" outerRadius="110.0" >
+        <pitch indoor="1.03" outdoor="1.03" >
+            <modifier type="MOTOR_RPM" value="0.2" modifiedValue="0.6" />
+            <modifier type="MOTOR_RPM" value="1.0" modifiedValue="1.04" />
+            <modifier type="SPEED" value="17.5" modifiedValue="0.99" />
+            <modifier type="SPEED" value="21.0" modifiedValue="1.06" />
+        </pitch>
+        <lowpassGain indoor="0.5" outdoor="0.9" />
+        <volume indoor="0.71" outdoor="1.28" >
+            <modifier type="MOTOR_LOAD" value="0.0" modifiedValue="0.00" />
+            <modifier type="MOTOR_LOAD" value="0.6" modifiedValue="1.00" />
+            <modifier type="ACCELERATE" value="0" modifiedValue="0.5" />
+            <modifier type="ACCELERATE" value="1" modifiedValue="1.0" />
+            <modifier type="CRUISECONTROL" value="0" modifiedValue="1.0" />
+            <modifier type="CRUISECONTROL" value="1" modifiedValue="2.0" />
+            <modifier type="SPEED" value="22.4" modifiedValue="0.85" />
+            <modifier type="SPEED" value="23.4" modifiedValue="0.0" />
+        </volume>
+    </motor>
+
+    <!-- Load-Sound 2. Gang und 3. Gang -->    
+    <motor file="sounds/MBTrac1800load.wav" linkNode="0>" innerRadius="23.5" outerRadius="110.0" >
+        <pitch indoor="1.03" outdoor="1.03" >
+            <modifier type="SPEED" value="22.4" modifiedValue="0.60" />
+            <modifier type="SPEED" value="37.0" modifiedValue="1.00" />
+            <modifier type="SPEED" value="39.0" modifiedValue="0.65" />
+            <modifier type="SPEED" value="53.0" modifiedValue="1.05" />
+        </pitch>
+        <lowpassGain indoor="0.5" outdoor="0.9" />
+        <volume indoor="0.97" outdoor="1.7" >
+            <modifier type="MOTOR_LOAD" value="0.0" modifiedValue="0.00" />
+            <modifier type="MOTOR_LOAD" value="0.7" modifiedValue="0.70" />
+            <modifier type="ACCELERATE" value="0" modifiedValue="0.5" />
+            <modifier type="ACCELERATE" value="1" modifiedValue="1.0" />
+            <modifier type="CRUISECONTROL" value="0" modifiedValue="1.0" />
+            <modifier type="CRUISECONTROL" value="1" modifiedValue="2.0" />
+            <modifier type="SPEED" value="22.4" modifiedValue="0.00" />
+            <modifier type="SPEED" value="23.4" modifiedValue="0.40" />            
+            <modifier type="SPEED" value="26.1" modifiedValue="0.95" />
+            <modifier type="SPEED" value="36.0" modifiedValue="1.05" />
+            <modifier type="SPEED" value="37.3" modifiedValue="0.50" />
+            <modifier type="SPEED" value="39.0" modifiedValue="0.40" />
+            <modifier type="SPEED" value="43.0" modifiedValue="1.00" />            
+            <modifier type="SPEED" value="50.0" modifiedValue="1.10" />
+            <modifier type="SPEED" value="53.0" modifiedValue="0.70" />
+        </volume>
+    </motor>
+    
+    <gearbox file="sounds/MBTrac1800gearbox.wav" linkNode="0>" innerRadius="23.5" outerRadius="110.0" >
+        <volume indoor="0.38" outdoor="0.38" >
+            <modifier type="SPEED" value="8.0" modifiedValue="0.0" />
+            <modifier type="SPEED" value="50.0" modifiedValue="1.0" />
+        </volume>
+        <pitch indoor="1.5" outdoor="1.5" >
+            <modifier type="SPEED" value="0.0" modifiedValue="0.8" />
+            <modifier type="SPEED" value="50.0" modifiedValue="1.2" />
+        </pitch>
+        <lowpassGain indoor="0.65" outdoor="0.65" />
+    </gearbox>
+    
+    <!-- retarder template="DEFAULT_RETARDER" file="$data/sounds/vehicles/retarder/retarder_loop_01.wav" linkNode="0>"/ -->
+    <retarder file="$data/sounds/vehicles/retarder/retarder_loop_01.wav" linkNode="0>" innerRadius="23.5" outerRadius="110.0" >
+        <volume indoor="0.25" outdoor="0.25" >
+            <modifier type="SPEED" value="8.0" modifiedValue="0.0" />
+            <modifier type="SPEED" value="54.0" modifiedValue="1.0" />
+            <modifier type="ACCELERATE" value="0" modifiedValue="1.0" />
+            <modifier type="ACCELERATE" value="0.01" modifiedValue="0.0" />
+            <modifier type="CRUISECONTROL" value="0" modifiedValue="1.0" />
+            <modifier type="CRUISECONTROL" value="0.01" modifiedValue="0.0" />
+        </volume>
+        <pitch indoor="0.5" outdoor="0.5" >    <!-- LS17: 0.65 -->
+            <modifier type="SPEED" value="0.0" modifiedValue="0.8" />
+            <modifier type="SPEED" value="54.0" modifiedValue="3.0" />
+        </pitch>
+        <lowpassGain indoor="1.0" outdoor="1.0" />
+    </retarder>
+    
+    <!-- airCompressorStart template="BRAKE_COMPRESSOR_START" linkNode="0>"/ -->
+    <airCompressorStart file="$data/sounds/vehicles/compressor/compressor_controller.wav" linkNode="0>" innerRadius="23.5" outerRadius="110.0" >
+        <volume indoor="0.26" outdoor="0.34" />
+        <pitch indoor="1.0" outdoor="1.0" />
+        <lowpassGain indoor="0.5" outdoor="1.0" />
+    </airCompressorStart>
+
+    <!-- airCompressorStop template="BRAKE_COMPRESSOR_STOP" linkNode="0>"/ -->
+    <airCompressorStop file="$data/sounds/vehicles/compressor/pressure_regulator.wav" linkNode="0>" innerRadius="23.5" outerRadius="110.0" >
+        <volume indoor="0.26" outdoor="0.34" />
+        <pitch indoor="1.0" outdoor="1.0" />
+        <lowpassGain indoor="0.5" outdoor="1.0" />
+    </airCompressorStop>
+
+    <!-- airCompressorRun template="BRAKE_COMPRESSOR_RUN" linkNode="0>"/ -->
+    <airCompressorRun file="$data/sounds/vehicles/compressor/compressor_idle_loop.wav" linkNode="0>" innerRadius="23.5" outerRadius="110.0" fadeOut="0.1" >
+        <volume indoor="0.17" outdoor="0.17" />
+        <pitch indoor="1.0" outdoor="1.0" />
+        <lowpassGain indoor="0.5" outdoor="1.0" />
+    </airCompressorRun>
+
+    <!-- compressedAir template="BRAKE_SMALL" linkNode="0>"/ -->
+    <compressedAir file="$data/sounds/vehicles/brake/brake_small.wav" linkNode="0>" innerRadius="23.5" outerRadius="110.0" >
+        <volume indoor="1.7" outdoor="2.0">
+            <modifier type="BRAKE_TIME" value="0.0" modifiedValue="0.0" />
+            <modifier type="BRAKE_TIME" value="1.0" modifiedValue="1.0" />
+        </volume>
+        <pitch indoor="1.0" outdoor="1.0" />
+        <lowpassGain indoor="0.5" outdoor="1.0" />
+    </compressedAir>
+
+    <!-- airRelease template="BRAKE_REGULATOR_VALVE" linkNode="0>"/ -->
+    <airRelease file="$data/sounds/vehicles/compressor/regulator_valve_01.wav" linkNode="0>" innerRadius="23.5" outerRadius="110.0" >
+        <volume indoor="0.85" outdoor="1.1" />
+        <pitch indoor="1.0" outdoor="1.0" />
+        <lowpassGain indoor="0.5" outdoor="1.0" />
+    </airRelease>
+
+</sounds>

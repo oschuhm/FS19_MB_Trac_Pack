@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="implement">
+    <annotation>Copyright by Bremi456</annotation>
+	<storeData>
+        <name>
+			<en>700 KG Concrete Weight</en>
+			<de>700 KG Betongewicht</de>
+		</name>
+		<specs>
+            <combination>MB trac</combination>
+			<capacity unit="$l10n_unit_kg">700</capacity>
+        </specs>
+        <functions>
+            <function>$l10n_function_weight</function>
+        </functions>
+        <image>betongewicht/betongewicht_store.dds</image>
+        <price>500</price>
+        <lifetime>600</lifetime>
+        <rotation>0</rotation>
+        <brand>LIZARD</brand>
+        <category>weights</category>
+    </storeData>
+	
+	<base>
+        <typeDesc>$l10n_typeDesc_weight</typeDesc>
+        <filename>betongewicht/Betongewicht.i3d</filename>
+        <size width="1.5" length="1.0" />
+        <components>
+            <component centerOfMass="0 0.15 0" solverIterationCount="10" mass="705" />
+        </components>
+        <schemaOverlay attacherJointPosition="0 0">
+            <default name="DEFAULT_IMPLEMENT"/>
+            <selected name="DEFAULT_IMPLEMENT_SELECTED"/>
+        </schemaOverlay>
+    </base>
+	
+	<attachable>
+        <inputAttacherJoints>
+            <inputAttacherJoint node="0>0" jointType="hookLift" upperRotationOffset="0" allowsJointRotLimitMovement="false" forceSelectionOnAttach="false"/>
+		</inputAttacherJoints>
+    </attachable>
+
+	<dynamicMount triggerNode="0>4"/>
+	
+    <wearable wearDuration="480" workMultiplier="5" fieldMultiplier="2"/>
+    <washable dirtDuration="90" washDuration="1" workMultiplier="3" fieldMultiplier="2"/>
+
+</vehicle>

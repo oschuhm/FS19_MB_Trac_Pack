@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<wheel>
+    <default>
+	   <tire filename="$data/shared/wheels/trelleborg/TM3000/R32_TM3000.i3d" nodeLeft="0|0" nodeRight="0|0" maxDeformation="0.1" isCareWheel="false" tireTrackAtlasIndex="0" />
+       <innerRim filename="i3d/MB_Felge1.i3d" nodeLeft="0|0|1" nodeRight="0|0|0"  offset="0.025" widthAndDiam="43 37"/>
+	   <physics radius="0.855" width="0.65" maxDeformation="0.067" mass="0.350"  frictionScale="1.60" maxLongStiffness="8" maxLatStiffness="100" maxLatStiffnessLoad="2" />
+	   <tire type="mud" tireTrackAtlasIndex="0"/>
+    </default>
+	<configurations>
+        <configuration id="weight3" >
+            <additional filename="$data/shared/wheels/weights/weight003.i3d" nodeLeft="0|0" nodeRight="0|1" offset="0.05" scale="0.5 0.76 0.76" mass="0.76" />
+        </configuration>
+    </configurations>
+</wheel>
+
+

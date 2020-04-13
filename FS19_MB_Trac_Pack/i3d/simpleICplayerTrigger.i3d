@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="iso-8859-1"?>
+<i3D name="MF7700" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+    <Asset>
+        <Export program="GIANTS Editor 64bit" version="8.2.0"/>
+    </Asset>
+    <Files/>
+    <Materials>
+        <Material name="lambert1" materialId="13" diffuseColor="0 0 0 1" specularColor="0.0941177 1 0.0941177"/>
+    </Materials>
+    <Shapes externalShapesFile="simpleICplayerTrigger.i3d.shapes"/>
+    <Dynamics/>
+    <Scene>
+        <Shape shapeId="1" name="playerTrigger" translation="0.617431 0.523402 0.0389486" scale="1 1 1.2" kinematic="true" trigger="true" collisionMask="1048576" nodeId="616" materialIds="13" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+    </Scene>
+</i3D>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<wheel>
+    <default>
+        <physics radius="0.768" width="0.52" mass="0.186" tireType="mud" frictionScale="1.60" maxLongStiffness="9" maxLatStiffness="110" maxLatStiffnessLoad="2" />
+        <tire filename="$data/shared/wheels/trelleborg/TM700/R30_TM700.i3d" nodeLeft="3|0" nodeRight="3|0" maxDeformation="0.077" isCareWheel="false" tireTrackAtlasIndex="0" />
+        <outerRim filename="i3d/Felge_cut1.i3d" nodeLeft="1|0" nodeRight="0|0" scale="0.72 0.9 0.9" />
+        <innerRim filename="i3d/Felge_cut1.i3d" nodeLeft="1|1" nodeRight="0|1" scale="1 0.9 0.9" />
+    </default>
+</wheel>

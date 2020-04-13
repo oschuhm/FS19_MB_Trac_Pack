@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<wheel>
+    <default>
+            <tire filename="$data/shared/wheels/trelleborg/TM800/R34_TM800.i3d" nodeLeft="2|0" nodeRight="2|0"/>
+            <innerRim filename="i3d/MB_Felge1.i3d" nodeLeft="0|0|1" nodeRight="0|0|0" offset="0.025" widthAndDiam="42.5 39"/>
+    
+     
+    <physics radius="0.768" width="0.48" maxDeformation="0.067" mass="0.182" frictionScale="2" maxLongStiffness="8" maxLatStiffness="100" maxLatStiffnessLoad="2"/>
+    <tire type="mud" tireTrackAtlasIndex="0"/>
+	</default>
+</wheel>

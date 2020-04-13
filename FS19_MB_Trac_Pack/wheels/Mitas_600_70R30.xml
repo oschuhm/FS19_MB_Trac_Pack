@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<wheel>
+    <default>
+        <physics radius="0.798" width="0.6" mass="0.214" tireType="mud" frictionScale="1.60" maxLongStiffness="8" maxLatStiffness="100" maxLatStiffnessLoad="2" />
+        <tire filename="$data/shared/wheels/mitas/SFT/R30_SFT.i3d" nodeLeft="1|0" nodeRight="1|0" maxDeformation="0.083" isCareWheel="false" tireTrackAtlasIndex="0" />
+        <outerRim filename="i3d/Felge_cut1.i3d" nodeLeft="1|0" nodeRight="0|0" scale="0.77 0.87 0.87" />
+        <innerRim filename="i3d/Felge_cut1.i3d" nodeLeft="1|1" nodeRight="0|1" scale="1 0.87 0.87" />
+    </default>
+</wheel>

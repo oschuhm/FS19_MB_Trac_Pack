@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<modDesc descVersion="46">
+    <author>BM Modding, PommFritz, LSFarmers, BR Mod Performance, Sven, nukudoxx, Bembelpower</author>
+    <version>1.6.0.0.1</version>
+    <title>
+        <en>MB Trac 1300-1800</en>
+        <de>MB Trac 1300-1800</de>
+    </title>
+    <description>
+        <en>MB Trac 1300-1800</en>
+        <de>MB Trac 1300-1800</de>
+    </description>
+    <iconFilename>store/icon.dds</iconFilename>
+    <multiplayer supported="true"/>
+		
+	<vehicleTypes>
+		<type name="MBTrac" className="Vehicle" filename="$dataS/scripts/vehicles/Vehicle.lua" parent="baseDrivable"  >
+			<specialization name="reverseDriving" />
+			<specialization name="foldable" />
+			<specialization name="cylinderedFoldable" />
+			<specialization name="addConfig"/>
+		</type>
+	</vehicleTypes>
+	
+    <l10n>
+        <text name="configuration_Luftfilter">
+			<de>Luftfilter</de>
+			<en>Airfilter</en>
+		</text>
+        <text name="configuration_Auspuff">
+			<de>Auspuff</de>
+			<en>Exhaust</en>
+		</text>
+        <text name="configuration_Spiegel">
+			<de>Spiegel</de>
+			<en>Mirror</en>
+	    </text>
+        <text name="configuration_Klima">
+			<de>Klimaanlage</de>
+			<en>Airconditioning</en>
+		</text>
+        <text name="configuration_Fortskäfig">
+			<de>Fortskäfig</de>
+			<en>Forstcage</en>
+		</text>
+        <text name="configuration_Licht">
+			<de>Zusatzlicht</de>
+			<en>Extralight</en>
+	    </text>
+		<text name="configuration_Puppen">
+			<de>Michelin</de>
+			<en>Michelin</en>
+	    </text>
+	</l10n>
+	
+    <brands>
+        <brand name="MERCEDES" title="Mercedes" image="store/brand_mb.dds"/>
+    </brands>
+
+    <storeItems>
+        <storeItem xmlFilename="MBTrac.xml" rootNode="vehicle"/>
+		<storeItem rootNode="vehicle" xmlFilename="betongewicht/Betongewicht.xml"/>
+    </storeItems>
+	
+	<specializations>
+		<specialization name="addConfig" className="AddConfig" filename="scripts/AddConfig.lua"/>
+	</specializations>
+    
+	<newConfigurations>
+		<newConfiguration configName="Luftfilter" isColorConfig="false" />
+		<newConfiguration configName="Auspuff" isColorConfig="false" />
+		<newConfiguration configName="Spiegel" isColorConfig="false" />
+		<newConfiguration configName="Klima" isColorConfig="false" />
+		<newConfiguration configName="Fortskäfig" isColorConfig="false" />
+		<newConfiguration configName="Licht" isColorConfig="false" />
+		<newConfiguration configName="Puppen" isColorConfig="false" />
+	</newConfigurations>
+</modDesc>

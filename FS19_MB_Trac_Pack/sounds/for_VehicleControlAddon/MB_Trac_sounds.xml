@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<sounds>
+    <motorStart template="DEFAULT_MOTOR_START" file="sounds/MBTrac1800start.ogg" linkNode="0>"/>
+    <motorStop template="DEFAULT_MOTOR_STOP" file="sounds/MBTrac1800stop.ogg" linkNode="0>"/>
+
+    <motor template="DEFAULT_MOTOR_IDLE" file="sounds/MBTrac1800idle.ogg" linkNode="0>"/>
+    <!-- <motor template="DEFAULT_MOTOR_OFFLOAD_RUN" file="$data/sounds/vehicles/engine/case_ih_magnum_7240/case_ih_magnum_7240_load_loop.wav" linkNode="0>"/> -->
+    <motor template="DEFAULT_MOTOR_OFFLOAD_RUN" file="$data/sounds/vehicles/engine/case_ih_optum/case_ih_optum_load_loop.wav" linkNode="0>"/>
+    <motor template="DEFAULT_MOTOR_ONLOAD_RUN" file="sounds/MBTrac1800load.ogg" linkNode="0>"/>
+
+    <gearbox template="DEFAULT_GEARBOX" file="$data/sounds/vehicles/transmission/transmission_cvtx_loop.wav" linkNode="0>"/>
+    <retarder template="DEFAULT_RETARDER" file="$data/sounds/vehicles/retarder/retarder_loop_01.wav" linkNode="0>"/>
+
+    <airCompressorStart template="BRAKE_COMPRESSOR_START" linkNode="0>"/>
+    <airCompressorStop template="BRAKE_COMPRESSOR_STOP" linkNode="0>"/>
+    <airCompressorRun template="BRAKE_COMPRESSOR_RUN" linkNode="0>"/>
+    <compressedAir template="BRAKE_SMALL" linkNode="0>"/>
+    <airRelease template="BRAKE_REGULATOR_VALVE" linkNode="0>"/>
+
+    
+</sounds>
