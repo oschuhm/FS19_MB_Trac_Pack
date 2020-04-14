@@ -680,7 +680,7 @@
             <rotationNode2 node="0>8|1|0|0"/>
             <bottomArm rotationNode="0>8|1|1" translationNode="0>8|1|1|0" referenceNode="0>8|1|1|0|0" zScale="-1" startRotation="-17 0 0"/>
             <topArm rotationNode="0>8|1|2" toggleVisibility="true" translationNode="0>8|1|2|0|0" referenceNode="0>8|1|2|0|0|0|0" zScale="-1"/>
-            <schema position="1 0" rotation="0" invertX="false"/>
+            <schema position="1.225 0" rotation="0" invertX="false"/>
             <objectChange node="0>8|1|12" visibilityActive="false" visibilityInactive="true"/>
 			<objectChange node="0>8|1|2|1" visibilityActive="false" visibilityInactive="true"/>
         </attacherJoint>
@@ -697,14 +697,14 @@
         <attacherJoint node="0>8|1|12|0" jointType="trailer" lowerRotLimit="10 80 80" upperRotationOffset="0" comboTime="1" allowsJointLimitMovement="false">
 			<distanceToGround lower="0.541" upper="0.951"/>
             <transNode node="0>8|1|12" minY="0.56" maxY="0.97"/>
-            <schema position="1 0" rotation="0" invertX="false"/>
+            <schema position="1.225 0" rotation="0" invertX="false"/>
             <objectChange node="0>8|1|11" visibilityActive="false" visibilityInactive="true"/>
         </attacherJoint>
         <attacherJoint node="0>8|1|11|0" jointType="trailerLow" lowerRotLimit="10 50 50" upperRotationOffset="0" comboTime="1" allowsJointLimitMovement="false">
             <steeringBars leftNode="0>8|1|11|1" rightNode="0>8|1|11|2"/>
 			<distanceToGround lower="0.546" upper="0.931"/>
             <transNode node="0>8|1|11" minY="0.565" maxY="0.95"/>
-            <schema position="1 0" rotation="0" invertX="false"/>
+            <schema position="1.225 0" rotation="0" invertX="false"/>
             <objectChange node="0>8|1|1" rotationActive="30 0 0" rotationInactive="-20 0 0"/>
             <objectChange node="0>8|1|12" visibilityActive="false" visibilityInactive="true"/>
         </attacherJoint>
@@ -712,7 +712,7 @@
             <schema position="1 0" rotation="0" invertX="true"/>
         </attacherJoint>
 		<attacherJoint node="0>18|4" jointType="hookLift">
-            <schema position="0.5 0.75" rotation="0" invertX="false"/>
+            <schema position="0.825 0.225" rotation="0" invertX="false"/>
         </attacherJoint>
 		<sounds>
             <attach template="ATTACH_01"/>
@@ -750,7 +750,7 @@
                 <rotationNode upperRotation="0 0 0" lowerRotation="0 0 0"/>
 				<objectChange node="FrontloaderHydraulicOpenBack" visibilityActive="true" visibilityInactive="false"/>
 				<objectChange node="FrontloaderHydraulicClosedBack" visibilityActive="false" visibilityInactive="true"/>
-                <schema position="0 0.4" rotation="0" invertX="true"/>
+                <schema position="1 0.4" rotation="0" invertX="true"/>
         </attacherJoint>
       </frontloaderConfiguration>
 	  <frontloaderConfiguration name="Frontlader Aloe/Trima" price="1500" >
